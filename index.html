@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="id" class="scroll-smooth"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Savvy youth</title><meta name="description" content="afafadfadfaf"><link rel="icon" href="./logo.png"><script src="https://cdn.tailwindcss.com"></script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ['Inter', 'sans-serif'] },
+            colors: {
+              base: '#0f172a', surface: '#1e293b', content: '#f8fafc', muted: '#94a3b8', primary: '#3b82f6', btn: '#3b82f6', btntext: '#ffffff'
+            }
+          }
+        }
+      }
+    </script>
+    <style>body{font-family:'Inter',sans-serif; background-color: #0f172a; color: #f8fafc;}</style>
+    </head><body class="antialiased overflow-x-hidden selection:bg-primary selection:text-white">
+    <nav class="fixed w-full bg-surface/90 backdrop-blur-md z-50 border-b border-slate-200/20 shadow-sm"><div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"><div class="flex items-center"><img src="./logo.png" alt="Logo" class="h-10"><span class="text-2xl font-bold text-primary ml-3">Savvy youth</span></div><div class="hidden md:flex gap-8 items-center"><a href="#sec_1" class="text-content hover:text-primary font-bold transition">Beranda</a></div></div></nav>
+    <section id="sec_1" class="relative pt-32 pb-20 px-6 bg-base" style="background-image: url('./bg_sec_1.jpg'); background-size: cover; background-position: center;"><div class="absolute inset-0 bg-black/70 z-0"></div>
+          <div class="relative z-10 max-w-7xl mx-auto flex flex-col text-center items-center gap-12">
+              <div class="w-full max-w-4xl mx-auto">
+                  <h1 class="text-5xl md:text-7xl font-extrabold leading-tight text-white mb-6">Savvy Youth</h1>
+                  <p class="text-lg md:text-xl text-slate-200 mb-8 leading-relaxed">Tempah kopi Kalcer</p>
+              </div>
+              
+          </div>
+      </section>
+    <footer class="bg-surface border-t border-slate-200/20 py-10 text-center text-muted"><p class="font-medium">&copy; 2026 Savvy youth. Hak Cipta Dilindungi.</p></footer>
+    <script>
+    const form = document.getElementById('form-pesan'); if(form){form.addEventListener('submit', async(e)=>{e.preventDefault();const b=document.getElementById('btn-submit');b.innerText="Mengirim...";b.disabled=true;try{await fetch("https://script.google.com/macros/s/AKfycbwERXba9E86v2tZ6pQPIOHO72Nq5h9FHhMDF7nNXhf5B46HbOzPqH0YtvSie9DA1dlz/exec",{method:'POST',body:JSON.stringify({action:"submit_lead",sumber_web:"Savvy youth",nama_pengunjung:document.getElementById('nama_pengunjung').value,wa_pengunjung:document.getElementById('wa_pengunjung').value,pesan:document.getElementById('pesan_pengunjung').value})});alert("Pesan terkirim! Tim kami akan segera merespon.");form.reset();}catch(err){alert("Gagal");}b.innerText="Kirim Pesan";b.disabled=false;});}
+  </script></body></html>
